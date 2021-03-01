@@ -1,0 +1,45 @@
+body {
+	font-family: "Open Sans";
+}
+
+.home {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home section {
+	width: auto;
+	text-align: center;
+}
+
+.home p {
+	font-size: 3.6rem;
+	text-shadow: 2px 2px snow;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+.home button {
+	width: 110px;
+	height: 40px;
+	background-color: #f9a9ce;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 4px 4px white;
+	outline: 0px solid transparent;
+}
+
+.home a {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: white;
+}
+
+@media (max-width: 720px) {
+	.home p {
+		letter-spacing: normal;
+	}
+}

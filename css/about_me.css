@@ -1,0 +1,172 @@
+body {
+	font-family: "Open Sans";
+	/* font-family: sans-serif; */
+}
+
+.newest_blog {
+	width: 100%;
+	padding: 4rem;
+	display: flex;
+	/* background-color: #54dee7; */
+}
+
+.newest_blog_cover {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.newest_blog_cover figure {
+	width: 44%;
+}
+
+.newest_blog_cover img {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px #54dee7;
+}
+
+.newest_blog_info {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.newest_blog_info h2 {
+	font-size: 3.2rem;
+	margin-bottom: 3rem;
+}
+
+.newest_blog_info p {
+	width: 84%;
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+.newest_blog_info button {
+	outline: none;
+	border: none;
+	padding: 0.8rem 1.2rem;
+	border-radius: 15px;
+	background-color: #54dee7;
+}
+
+button a {
+	font-weight: 700;
+	color: white;
+}
+
+.divider {
+	width: 100%;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.more_about {
+	width: 100%;
+	text-align: center;
+	margin: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.more_about a {
+	font-size: 1.8rem;
+	margin: 0 1rem;
+	/* background-color: #cff5f5; */
+	border-radius: 8px 8px 0px 0px;
+	border-bottom: 0.3rem solid #cff5f5;
+	padding: 0.5rem;
+}
+
+.more_about a:hover {
+	border-bottom: 0.3rem solid #54dee7;
+	transition: 0.8s;
+}
+
+.divider h1 {
+	font-weight: 400;
+	font-size: 4.2rem;
+}
+
+.blogs_container {
+	width: 100%;
+	padding: 0 15%;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_container article {
+	background-color: #9bf6ff;
+	border-radius: 15px;
+	margin: 1rem;
+	padding: 1.6rem;
+}
+
+.grid_container img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.grid_container h4 {
+	font-size: 2.4rem;
+	margin: 1rem 0;
+}
+.grid_container p,
+button {
+	margin: 1rem 0;
+	font-size: 2rem;
+}
+
+.grid_container button {
+	outline: none;
+	border: none;
+	padding: 0.8rem 1.2rem;
+	font-size: 1.6rem;
+	border-radius: 15px;
+	background-color: #54dee7;
+}
+
+@media (max-width: 1080px) {
+	.newest_blog {
+		display: block;
+	}
+	.newest_blog_cover,
+	.newest_blog_info {
+		width: 100%;
+	}
+	.newest_blog_info {
+		margin-top: 4rem;
+		align-items: center;
+	}
+	.newest_blog_info h2 {
+		width: 84%;
+		text-align: left;
+	}
+	.newest_blog_info button {
+		font-size: 1.8rem;
+	}
+	.grid_container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 720px) {
+	.blogs_container {
+		padding: 0 5%;
+	}
+	.grid_container {
+		grid-template-columns: 1fr;
+	}
+	.newest_blog {
+		padding: 2rem 1rem;
+	}
+}
